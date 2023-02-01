@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Launcher">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        app:layout_constraintTop_toTopOf="@id/title"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/title"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/orange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gpsSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Switch
+        android:id="@+id/gpsSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cardiacSwitch"
+        android:layout_marginStart="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/textGps"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gps"
+        app:layout_constraintTop_toTopOf="@id/gpsSwitch"
+        app:layout_constraintBottom_toBottomOf="@id/gpsSwitch"
+        app:layout_constraintStart_toEndOf="@id/gpsSwitch" />
+
+
+    <ImageView
+        android:id="@+id/imageGps"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/gpslogo"
+        app:layout_constraintBottom_toBottomOf="@id/gpsSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@id/gpsSwitch"
+        app:layout_constraintTop_toTopOf="@id/gpsSwitch"/>
+
+    <Switch
+        android:id="@+id/cardiacSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gpsSwitch"
+        app:layout_constraintBottom_toTopOf="@id/pedalSwitch"
+        android:layout_marginStart="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/textCardiac"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cardiacBelt"
+        app:layout_constraintTop_toTopOf="@id/cardiacSwitch"
+        app:layout_constraintBottom_toBottomOf="@id/cardiacSwitch"
+        app:layout_constraintStart_toEndOf="@id/cardiacSwitch" />
+
+    <ImageView
+        android:id="@+id/imageCardiac"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/cardiacbelt"
+        app:layout_constraintTop_toTopOf="@id/cardiacSwitch"
+        app:layout_constraintBottom_toBottomOf="@id/cardiacSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@id/cardiacSwitch" />
+
+    <Switch
+        android:id="@+id/pedalSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardiacSwitch"
+        app:layout_constraintBottom_toTopOf="@id/ghostSwitch"
+        android:layout_marginStart="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+    <TextView
+        android:id="@+id/textPedal"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pedal"
+        app:layout_constraintTop_toTopOf="@id/pedalSwitch"
+        app:layout_constraintBottom_toBottomOf="@id/pedalSwitch"
+        app:layout_constraintStart_toEndOf="@id/pedalSwitch" />
+
+    <ImageView
+        android:id="@+id/imagePedal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/pedallogo"
+        app:layout_constraintBottom_toBottomOf="@id/pedalSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@id/pedalSwitch"
+        app:layout_constraintTop_toTopOf="@id/pedalSwitch"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Switch
+        android:id="@+id/ghostSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pedalSwitch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+    <TextView
+        android:id="@+id/textGhost"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/motivation"
+        app:layout_constraintTop_toTopOf="@id/ghostSwitch"
+        app:layout_constraintBottom_toBottomOf="@id/ghostSwitch"
+        app:layout_constraintStart_toEndOf="@id/ghostSwitch" />
+
+
+    <ImageView
+        android:id="@+id/imageGhost"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/motivationlogo"
+        app:layout_constraintTop_toTopOf="@id/ghostSwitch"
+        app:layout_constraintBottom_toBottomOf="@id/ghostSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@id/ghostSwitch" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/btnLaunch"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
+        android:textSize="20dp"
+        android:text="@string/launch"
+        android:textColor="@color/black"
+        android:theme="@style/Theme.MaterialComponents"
+        app:cornerRadius="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ghostSwitch"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

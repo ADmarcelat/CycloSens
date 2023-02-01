@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">CycloSens</string>
+    <string name="welcomeMessage">So nice to see you again !!</string>
+    <string name="welcomeUser">Welcome </string>
+
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name : </string>
+    <string name="surname">Surname : </string>
+    <string name="email">Email : </string>
+    <string name="password">Password : </string>
+    <string name="resetPassword">Forgot your password ?</string>
+    <string name="back">Back</string>
+    <string name="emailConfirmation">You need to confirm your email before log in</string>
+
+    <string name="resetPage">Reset Password</string>
+    <string name="resetByEmail">Send My New Password</string>
+    <string name="resetEmail">Password send to your email</string>
+
+    <string name="welcome">Perfect ! You are now register on our app</string>
+    <string name="wrongEmail">You have not entered a good email</string>
+    <string name="wrongPassword">You have not entered a good password (8 characters: 1 lower, 1 Upper case and 1 number)</string>
+    <string name="notName">You need to enter a name</string>
+    <string name="notSurname">You need to enter a surname</string>
+    <string name="notPseudo">You need to enter an username</string>
+    <string name="notEmail">You need to enter a email</string>
+    <string name="notPassword">You need to enter a password</string>
+    <string name="notInfo">You need to fill all the fields</string>
+    <string name="emailSent">Verification Email has been sent</string>
+    <string name="notVerified">Email Not Verified !</string>
+    <string name="verifyNow">VERIFY NOW</string>
+    <string name="error_log_in">Wrong email or Password</string>
+    <string name="already_register">You are already registered</string>
+
+    <string name="error">Error</string>
+
+    <string name="setting">Setting</string>
+    <string name="logout">Logout</string>
+    <string name="unsubscribe">  Unsubscribe  </string>
+    <string name="dialogue_message_unsubscribe">Are you sure that you want to quite our app?</string>
+    <string name="yes_answer">Yes</string>
+    <string name="no_answer">No</string>
+    <string name="account_deleted">Account Deleted</string>
+
+    <string name="devices">Devices</string>
+
+    <string name="aboutUs">About Us</string>
+    <string name="aboutUsText">Application created for the IoT Projet of M1 at ISEN Toulon \n \nCreated by Lisa Duterte and Adrien Marcelat during their 2nd semester \n \n Mars-Mai 2022</string>
+
+    <string name="start">Start An Activity : </string>
+    <string name="launch">Launch</string>
+    <string name="motivation">Add Motivation Mode ?</string>
+    <string name="pedal">Pedal pairing</string>
+    <string name="cardiacBelt">Cardiac Belt pairing</string>
+    <string name="gps">GPS pairing</string>
+    <string name="toastLauncher">You need to pair all the bluetooth sensors and the gps of you device</string>
+    <string name="activities">Activities</string>
+    <string name="itineraries">Itineraries</string>
+    <string name="descriptionItinerary">The duration of the activity is calculated according to your average speed</string>
+
+    <string name="onGoing">On Going</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="activity">Activity</string>
+    <string name="duration">Duration : </string>>
+    <string name="distance">Distance : </string>
+    <string name="bpm">BPM : </string>
+    <string name="strength">Strength : </string>
+    <string name="speedUnity">m/s</string>
+    <string name="cardiacUnity">bpm</string>
+    <string name="bpmAv">BPM Average : </string>
+    <string name="strengthAv">Strength Average : </string>
+    <string name="speedAv">Speed Average :</string>
+    <string name="changeName">Enter the name of the activity</string>
+    <string name="validate">Validate</string>
+    <string name="annulation">Annulation</string>
+    <string name="delete_activity">Delete Activity</string>
+    <string name="startEncouragement">Let\'s Go !</string>
+    <string name="posEncouragement">Good !</string>
+    <string name="negEncouragement">Come On !</string>
+
+    <string name="nbActivities">Nb Activities : </string>
+    <string name="lastTrackSummary">Last Track Summary</string>
+    <string name="activitiesSummary">Activities Summary</string>
+    <string name="distanceAv">Average Distance : </string>
+    <string name="distanceTotal">Total Distance : </string>
+
+    <string name="device">Devices</string>
+    <string name="cardiacDevice">Cardiac Device</string>
+    <string name="pedalDevice">Pedal Device</string>
+    <string name="addCardiacDevice">Add Cardiac Device</string>
+    <string name="addPedalDevice">Add Pedal Device</string>
+    <string name="blePermission">BLE Permission</string>
+    <string name="locationPermission">GPS Permission</string>
+
+    <string name="deviceUnknown">Device Unknown</string>
+    <string name="schoolName">Isen Toulon</string>
+
+    <string name="bleEnabled"> Bluetooth Enabled</string>
+    <string name="bleDisabled"> Bluetooth Disabled</string>
+    <string name="bleNotSupported">Bluetooth not supported </string>
+    <string name="sensorsNotFound">One or more sensors not found</string>
+    <string name="pairingProblem">Pairing problem</string>
+    <string name="pairingBeltNecessary">You need to pair the cardiac belt before launching an activity</string>
+    <string name="pairingPedalNecessary">You need to pair the pedal before launching an activity</string>
+</resources>
